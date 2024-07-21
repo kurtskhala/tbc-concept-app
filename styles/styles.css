@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 96px;
+}
+
+header {
+    display: flex;
+    padding: 24px 94px;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    max-width: inherit;
+    width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.app-header-logo {
+    color: #f9fafa;
+    width: 165px;
+    height: 32px;
+    filter: invert(27%) sepia(2%) saturate(1587%) hue-rotate(151deg) brightness(99%) contrast(94%);
+}
+
+.app-rand {
+    height: 1000px;
+    background-color: blue;
+}
