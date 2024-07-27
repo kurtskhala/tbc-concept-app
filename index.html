@@ -1,45 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <script src="https://kit.fontawesome.com/0e1a1f2a1c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <script
+      src="https://kit.fontawesome.com/0e1a1f2a1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/laptop.css" />
+    <link rel="stylesheet" href="./styles/tablet.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <a class="app-header-logo">
-                <img src="./assets/logo.svg" alt="logo"/>
-            </a>
-            <nav class="app-header-nav">
-                <ul class="app-header-nav-ul">
-                    <li class="app-header-nav-li">პროდუქტები</li>
-                    <li class="app-header-nav-li">შეთავაზებები</li>
-                    <li class="app-header-nav-li">კონცეპტის სივრცე</li>
-                </ul>
-            </nav>
-            <div class="app-header-rightSide">
-                <i class="fa-solid fa-magnifying-glass app-header-rightSide-search"></i>
-                <div class="app-header-rightSide-package">
-                    <i class="fa-solid fa-arrow-right app-header-rightSide-package-icon"></i>
-                    <span class="app-header-rightSide-package-text">გამოიწერეთ ნაკრები</span>
-                </div>
-                <div class="app-header-rightSide-language">
-                    <i class="fa-solid fa-globe app-header-rightSide-language-icon"></i>
-                    <span class="app-header-rightSide-language-text">ქართ</span>
-                </div>
+      <header>
+        <div class="app-header-container">
+          <a class="app-header-logo">
+            <img src="./assets/logo.svg" alt="logo" />
+          </a>
+          <a class="app-header-logo app-header-logo-small">
+            <img src="./assets/smallLogo.svg" alt="logo" />
+          </a>
+          <nav class="app-header-nav">
+            <ul class="app-header-nav-ul">
+              <li class="app-header-nav-li">პროდუქტები</li>
+              <li class="app-header-nav-li">შეთავაზებები</li>
+              <li class="app-header-nav-li">კონცეპტის სივრცე</li>
+            </ul>
+          </nav>
+          <div class="app-header-rightSide">
+            <i
+              class="fa-solid fa-magnifying-glass app-header-rightSide-search"
+            ></i>
+            <div class="app-header-rightSide-package">
+              <i
+                class="fa-solid fa-arrow-right app-header-rightSide-package-icon"
+              ></i>
+              <span class="app-header-rightSide-package-text"
+                >გამოიწერეთ ნაკრები</span
+              >
             </div>
-        </header>
+            <div class="app-header-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="app-header-rightSide-language">
+              <i
+                class="fa-solid fa-globe app-header-rightSide-language-icon"
+              ></i>
+              <span class="app-header-rightSide-language-text">ქარ</span>
+            </div>
+          </div>
+        </div>
+      </header>
 
-        <section class="app-rand">
-            
-        </section>
-        <footer>
-        </footer>
+      <div class="menu-container">
+        <div class="menu-item">
+          <div class="menu-header">Projects</div>
+          <div class="menu-content">
+            <ul>
+              <li>Project 1</li>
+              <li>Project 2</li>
+              <li>Project 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-header">Employees</div>
+          <div class="menu-content">
+            <ul>
+              <li>Leadership</li>
+              <li>Employees</li>
+              <li>Contractors</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-header">Company Profile</div>
+          <div class="menu-content">
+            <ul>
+              <li>About Us</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="app-main-content-container">
+        <div class="app-main-content">
+          <div class="app-main-header-container">
+            <h2 class="app-main-header">მთავარი</h2>
+          </div>
+
+          <section class="app-main-content-hero">
+            <div class="app-main-content-hero-content">
+              <h3 class="app-main-content-hero-content-header">
+                თიბისი კონცეპტი
+              </h3>
+              <p class="app-main-content-hero-content-text">
+                პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა
+                და ინტერესებზე
+              </p>
+              <button class="app-main-content-hero-content-button">
+                <i
+                  class="fa-solid fa-arrow-right app-header-rightSide-package-icon"
+                ></i
+                >გამოიწერეთ
+              </button>
+            </div>
+          </section>
+
+          <section class="app-main-content-big_message">
+            <p class="app-main-content-big_message-text">
+              გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო,
+              ისე არასაბანკო უპირატესობებით.
+            </p>
+          </section>
+
+          <section class="app-main-content-become_concept">
+            <div class="app-main-content-become_concept-container">
+              <h2 class="app-main-content-become_concept-header">
+                შეარჩიეთ ნაკრები
+              </h2>
+              <div class="app-main-content-become_concept-content">
+                <div class="app-main-content-become_concept-content-left">
+                  <div
+                    class="app-main-content-become_concept-content-card app-main-content-become_concept-content-card_digital"
+                  >
+                    <h3
+                      class="app-main-content-become_concept-content-card-header"
+                    >
+                      ციფრული
+                    </h3>
+                    <button
+                      class="app-main-content-become_concept-content-card-button"
+                    >
+                      <i class="fa-solid fa-arrow-right"></i>იხილეთ მეტი
+                    </button>
+                  </div>
+                  <div
+                    class="app-main-content-become_concept-content-card app-main-content-become_concept-content-card_premium"
+                  >
+                    <h3
+                      class="app-main-content-become_concept-content-card-header"
+                    >
+                      პრემიუმი
+                    </h3>
+                    <button
+                      class="app-main-content-become_concept-content-card-button"
+                    >
+                      <i class="fa-solid fa-arrow-right"></i>იხილეთ მეტი
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="app-main-content-become_concept-content-card app-main-content-become_concept-content-card_360"
+                >
+                  <h3
+                    class="app-main-content-become_concept-content-card-header"
+                  >
+                    360
+                  </h3>
+                  <button
+                    class="app-main-content-become_concept-content-card-button"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>იხილეთ მეტი
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="app-main-content-numbers">
+            <div class="app-main-content-numbers-card">
+              <span class="app-main-content-numbers-card-num"> 94 750 </span>
+              <p class="app-main-content-numbers-card-text">მომხმარებელი</p>
+            </div>
+            <div class="app-main-content-numbers-card">
+              <span class="app-main-content-numbers-card-num"> 150+ </span>
+              <p class="app-main-content-numbers-card-text">ღონისძიება</p>
+            </div>
+            <div class="app-main-content-numbers-card">
+              <span class="app-main-content-numbers-card-num"> 130+ </span>
+              <p class="app-main-content-numbers-card-text">შეთავაზება</p>
+            </div>
+          </section>
+
+          <section class="app-main-content-offers-swiper">
+            <div class="app-main-content-become_concept-header-container">
+              <h2 class="app-main-content-become_concept-header">
+                შეთავაზებები
+              </h2>
+              <div class="app-header-rightSide-package">
+                <i
+                  class="fa-solid fa-arrow-right app-header-rightSide-package-icon"
+                ></i>
+                <span class="app-header-rightSide-package-text"
+                  >ყველა შეთავაზება</span
+                >
+              </div>
+            </div>
+            <div class="app-main-content-offers-swiper-slider">
+              <div class="app-main-content-offers-swiper-slider-cards">
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/offers mp.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                    <div class="logo">
+                      <img src="./assets/empidev.jpg" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">ინვესტიციები</p>
+                    <h3 class="title">
+                      MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                    </h3>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/offers mp.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                    <div class="logo">
+                      <img src="./assets/empidev.jpg" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">ინვესტიციები</p>
+                    <h3 class="title">
+                      MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                    </h3>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/offers mp.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                    <div class="logo">
+                      <img src="./assets/empidev.jpg" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">ინვესტიციები</p>
+                    <h3 class="title">
+                      MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                    </h3>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/offers mp.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                    <div class="logo">
+                      <img src="./assets/empidev.jpg" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">ინვესტიციები</p>
+                    <h3 class="title">
+                      MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                    </h3>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/offers mp.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                    <div class="logo">
+                      <img src="./assets/empidev.jpg" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">ინვესტიციები</p>
+                    <h3 class="title">
+                      MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                    </h3>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/offers mp.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                    <div class="logo">
+                      <img src="./assets/empidev.jpg" alt="Logo" />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">ინვესტიციები</p>
+                    <h3 class="title">
+                      MP დეველოპმენტი - აშშ და ევროს ობლიგაციები
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blue-slider-bar-container">
+              <div class="blue-slider-bar"></div>
+            </div>
+          </section>
+
+          <section class="app-main-content-get_app">
+            <div class="app-main-content-get_app-left">
+              <h2 class="app-main-content-become_concept-header">
+                ციფრული ბანკი
+              </h2>
+              <p class="app-main-content-get_app-left-text">
+                შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის
+                დახმარებით
+              </p>
+              <div class="app-main-content-get_app-left-links">
+                <a class="app-main-content-get_app-left-link">
+                  <img src="./assets/playstore.svg" alt="google store" />
+                </a>
+                <a class="app-main-content-get_app-left-link">
+                  <img src="./assets/appstore.svg" alt="app store" />
+                </a>
+              </div>
+            </div>
+            <div class="app-main-content-get_app-right">
+              <img
+                class="app-main-content-get_app-right-img"
+                alt="app download"
+                src="./assets/app-download.png"
+              />
+            </div>
+          </section>
+
+          <section class="app-main-content-offers-swiper">
+            <div class="app-main-content-become_concept-header-container">
+              <h2 class="app-main-content-become_concept-header">
+                შეთავაზებები
+              </h2>
+            </div>
+            <div class="app-main-content-offers-swiper-slider">
+              <div class="app-main-content-offers-swiper-slider-cards">
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/digital.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">ციფრული</h3>
+                    <p class="category products-category">
+                      თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის,
+                      ვისთვისაც
+                      <strong
+                        >საბანკო მომსახურებით სარგებლობა ყოველდღიურობის
+                        ნაწილია</strong
+                      >, ვინც აქტიურად მოიხმარს
+                      <strong>არასაბანკო პროდუქტებსა და შეთავაზებებს</strong> და
+                      ვისაც ურჩევნია დამოუკიდებლად,
+                      <strong>პირადი ბანკირის გარეშე</strong> მართოს საკუთარი
+                      ფინანსები და საბანკო ოპერაციები.
+                    </p>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/premium.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">პრემიუმი</h3>
+                    <p class="category products-category">
+                      თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი
+                      ფორმატი - <strong>პრემიუმ ნაკრები</strong>, სხვა საბანკო
+                      და არასაბანკო უპირატესობებთან ერთად,
+                      <strong>პირადი ბანკირის მომსახურებას</strong> გულისხმობს.
+                      პირადი ბანკირის მთავარი ამოცანა მომხარებლისთვის ცხოვრების
+                      გამარტივება და მისთვის უმაღლესი ხარისხის მომსახურების
+                      უზრუნველყოფაა.
+                    </p>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image">
+                    <img
+                      src="./assets/360.png"
+                      draggable="false"
+                      alt="Card Image"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">360</h3>
+                    <p class="category products-category">
+                      <strong>თიბისი კონცეპტის 360</strong> ნაკრები განკუთვნილია
+                      მათთვის, ვისაც სხვა საბანკო და არასაბანკო უპიტარესობებთან
+                      ერთად, კიდევ უფრო
+                      <strong>მეტი ფინანსური ინსტრუმენტი</strong> და
+                      <strong>გაზრდილი შესაძლებლობები</strong> ესაჭიროება.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blue-slider-bar-container">
+              <div class="blue-slider-bar"></div>
+            </div>
+          </section>
+
+          <section class="app-main-content-private">
+            <div class="app-main-content-private-content">
+              <h3 class="app-main-content-private-content-header">
+                პირადი ბანკირი
+              </h3>
+              <p class="app-main-content-private-content-text">
+                თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში
+              </p>
+              <button class="app-main-content-private-content-button">
+                გაიგეთ მეტი
+              </button>
+            </div>
+          </section>
+
+          <section class="app-main-content-offers-swiper">
+            <div class="app-main-content-become_concept-header-container">
+              <h2 class="app-main-content-become_concept-header">ჯილდოები</h2>
+            </div>
+            <div class="app-main-content-offers-swiper-slider">
+              <div class="app-main-content-offers-swiper-slider-cards">
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image award-card-image">
+                    <img
+                      src="./assets/global finance logo.png"
+                      alt="Euromoney Logo"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">
+                      საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                      2024
+                    </h3>
+                    <p class="description">The Global Finance</p>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image award-card-image">
+                    <img
+                      src="./assets/euromoney logo.png"
+                      alt="Euromoney Logo"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">
+                      საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                      2023
+                    </h3>
+                    <p class="description">Euromoney</p>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image award-card-image">
+                    <img
+                      src="./assets/global finance logo.png"
+                      alt="Euromoney Logo"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">
+                      საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                      2022
+                    </h3>
+                    <p class="description">The Global Finance</p>
+                  </div>
+                </div>
+                <div class="app-main-content-offers-swiper-slider-card">
+                  <div class="card-image award-card-image">
+                    <img
+                      src="./assets/the banker logo.png"
+                      alt="Euromoney Logo"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h3 class="title">
+                      საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                      2021
+                    </h3>
+                    <p class="description">The Banker & PWM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blue-slider-bar-container">
+              <div class="blue-slider-bar"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <div class="app-footer-container">
+          <div class="app-footer-top">
+            <a class="app-header-logo">
+              <img src="./assets/logo.svg" alt="logo" />
+            </a>
+            <div class="app-header-rightSide-language">
+              <i
+                class="fa-solid fa-globe app-header-rightSide-language-icon"
+              ></i>
+              <span class="app-header-rightSide-language-text">ქართ</span>
+            </div>
+          </div>
+          <div class="app-footer-content">
+            <div class="app-footer-content-card">
+              <h4 class="app-footer-content-card-header">პროდუქტები</h4>
+              <nav class="app-footer-content-card-nav">
+                <ul class="app-footer-content-card-ul">
+                  <li>
+                    <a class="app-footer-content-card-link" href="">ნაკრები</a>
+                  </li>
+                  <li>
+                    <a class="app-footer-content-card-link" href=""
+                      >პერსონალური ბანკირი</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="app-footer-content-card">
+              <h4 class="app-footer-content-card-header">Lifestyle</h4>
+              <nav class="app-footer-content-card-nav">
+                <ul class="app-footer-content-card-ul">
+                  <li>
+                    <a class="app-footer-content-card-link" href=""
+                      >შეთავაზებები</a
+                    >
+                  </li>
+                  <li>
+                    <a class="app-footer-content-card-link" href=""
+                      >ღონისძიებები</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="app-footer-content-card">
+              <h4 class="app-footer-content-card-header">კონცეპტის სივრცე</h4>
+              <nav class="app-footer-content-card-nav">
+                <ul class="app-footer-content-card-ul">
+                  <li>
+                    <a class="app-footer-content-card-link" href=""
+                      >ბიბლიოთეკა</a
+                    >
+                  </li>
+                  <li>
+                    <a class="app-footer-content-card-link" href="">კაფე</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="app-footer-content-card">
+              <div class="app-footer-content-card-contacts">
+                <h4 class="app-footer-content-card-header">დაგვიკავშირდით</h4>
+                <nav class="app-footer-content-card-nav">
+                  <ul class="app-footer-content-card-ul">
+                    <li>
+                      <a
+                        href="tel:+995322272700"
+                        class="app-footer-listItem-link"
+                        ><i class="fa-solid fa-phone"></i> +995 32 2 27 27 00</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:info@tbcconcept.ge"
+                        class="app-footer-listItem-link"
+                        ><i class="fa-solid fa-envelope"></i>
+                        info@tbcconcept.ge</a
+                      >
+                    </li>
+                    <li>
+                      <a class="app-footer-content-card-link" href=""
+                        ><i class="fa-solid fa-location-dot"></i> ფილიალები</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="app-footer-content-card-social">
+                <h4
+                  class="app-footer-content-card-header app-footer-content-card-header_social"
+                >
+                  სოციალური ქსელები
+                </h4>
+                <nav class="app-footer-content-card-nav">
+                  <ul class="app-footer-content-card-ul">
+                    <li>
+                      <a
+                        class="app-footer-content-card-social-link"
+                        href="https://www.facebook.com/tbcconcept"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="app-footer-content-card-social-link"
+                        href="https://www.instagram.com/tbc_concept/"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="app-footer-bottom">
+            <div class="app-footer-bottom-left">
+              <img
+                class="app-footer-bottom-left-logo"
+                alt="small logo"
+                src="./assets/smallLogo.svg"
+              />
+              <h4>2024 ყველა უფლება დაცულია</h4>
+            </div>
+            <div class="app-footer-bottom-right">
+              <a href="">კონფიდენციალურობა</a>
+              <a href="">წესები და პირობები</a>
+            </div>
+          </div>
+        </div>
+      </footer> -->
     </div>
     <script type="text/javascript" src="./scripts/script.js"></script>
-</body>
+  </body>
 </html>
