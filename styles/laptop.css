@@ -1,4 +1,5 @@
 @media (max-width: 990px) {
+    /* main header  */
     .app-header-nav {
         display: none;
     }
@@ -7,9 +8,47 @@
         display: flex;
     }
 
-    .app-header-rightSide-language {
+    .app-header-rightSide-language_header {
         display: none;
     }
+
+    /* main hero content  */
+    .app-main-content-hero-container {
+        align-items: end;
+    }
+
+    .app-main-content-hero-content {
+        margin-left: 45px;
+        margin-bottom: 36px;
+    }
+
+    /* main content numbers  */
+
+    .app-main-content-numbers {
+        flex-direction: column;
+    }
+
+    /* main content become concept  */
+
+    .app-main-content-become_concept-content-card-content {
+        margin: 24px;
+    }
+
+    /* main content get app  */
+
+    .app-main-content-get_app-left-link {
+        display: none;
+    }
+
+    .app-main-content-get_app-left-link_download {
+        display: inline-block;
+    }
+
+    .app-main-content-offers-swiper-slider-card {
+        flex: 1 0 370px;
+    }
+      
+
 }
 
 @media (max-width: 765px) {
@@ -21,10 +60,212 @@
         display: inline-block;
         width: 36px;
     }
+
+     /* main hero content  */
+     .app-main-content-hero { 
+        padding-inline: 0;
+
+    }
+
+    .app-main-content-hero-container {
+        border-radius: 0px;
+    }
+
+     .app-main-content-hero-content {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 45px;
+     }
+
+    .app-main-content-hero-content-button {
+        width: 100%;
+    }
+
+    /* main content big message  */
+
+    .app-main-content-big_message-text {
+        font-size: 28px;
+    }
+
+    /* main content become concept  */
+
+    .app-main-content-become_concept-content-card {
+        height: 232px;
+        width: 280px;
+    }
+
+    .app-main-content-become_concept-content-card-content {
+        width: 280px;
+    }
+
+    .app-main-content-become_concept-content-left {
+        flex-direction: row;
+        column-gap: 16px;
+    }
+
+    .app-main-content-become_concept-content {
+        column-gap: 16px;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+    }
+
+    /* main content become concept  */
+
+    .app-main-content-become_concept-content-card-header {
+        font-size: 16px;
+    }
+        
+    /* main content get app  */
+
+    .app-main-content-get_app-container {
+        flex-direction: column-reverse;
+        align-items: start;
+        row-gap: 28px;
+    }
+
+    .app-main-content-get_app-right {
+        position: relative;
+        max-width: 370px;
+    }
+
+    .app-main-content-get_app-left {
+        width: 100%;
+    }
+
+    .app-main-content-get_app-left-link_download {
+        width: 100%;
+        display: flex;
+        align-items: center; justify-content: center;
+        margin-top: 20px;
+    }
+
+    .app-main-content-get_app-left-header{
+        display: none;
+    }    
+
+    .app-main-content-get_app-left-header_x {
+        display: inline-block;
+    }
+
+    .app-main-content-get_app-right {
+        display: flex;
+        flex-direction: column;
+        right: 0;
+    }
+
+    .app-main-content-offers-swiper-slider-card {
+        flex: 1 0 300px;
+    }
+
+    /* footer  */
+
+    .app-footer-content {
+        flex-direction: column;
+        row-gap: 56px;
+    }
+
+    .app-footer-menu-container {
+        display: inline-block;
+    }
+
+    .app-footer-content-card_hide {
+        display: none;
+    }
+
+    .app-footer-content-card-header_footer {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .app-footer-bottom {
+        flex-direction: column-reverse;
+        align-items: start;
+        row-gap: 32px;
+    }
+
 }
 
 @media screen and (max-width: 479px) {
     .app-header-container {
         margin-inline: 15px;
-    }    
+    }   
+    
+    .app-main-menu-item {
+        padding-inline: 15px;
+    }
+
+    .app-main-content-hero-content {
+        margin-inline: 15px;
+     }
+
+    .app-main-content-hero-content-header { 
+        font-size: 16px;
+    }
+
+    /* main content big message  */
+
+    .app-main-content-big_message {
+        padding-inline: 15px;
+    }
+
+    .app-main-content-big_message-text {
+        font-size: 24px;
+    }
+
+    /* main content numbers  */
+
+    .app-main-content-numbers {
+        padding-inline: 15px;
+    }
+
+    .app-main-content-numbers-card-num { 
+        font-size: 36px;
+    }
+
+    .app-main-content-numbers-card {
+        padding: 24px;
+    }
+    
+    .app-main-content-numbers-card-text {
+        font-size: 14px;
+    }
+
+    /* main content become concept  */
+
+    .app-main-content-become_concept-header {
+        padding-inline: 14px;
+    }
+    
+    .app-main-content-become_concept-content {
+        padding-inline: 14px;
+    }
+    
+    .app-main-content-become_concept-header {
+        font-size: 14px;
+    }
+
+    /* main content get app  */
+
+    .app-main-content-get_app-container {
+        padding-inline: 14px;
+    }
+
+    .app-main-content-get_app-left-header_x {
+        font-size: 14px;
+    }
+
+    .app-main-content-offers-swiper {
+        padding-inline: 14px;
+    }
+
+    /* footer */
+
+    .app-footer-container {
+        margin-inline: 14px;
+    }
+
+    .app-main-menu-item_footer {
+        padding-inline: 0;
+    }
+
 }
