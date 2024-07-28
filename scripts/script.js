@@ -4,7 +4,6 @@ const slidersElements = document.querySelectorAll(
 
 slidersElements.forEach((slidersElement) => {
   let slider = slidersElement.children[1];
-  console.log(slider);
   let mouseDown = false;
   let startX, scrollLeft;
   const blueSliderBar = slidersElement.children[2].children[0];
@@ -35,7 +34,8 @@ slidersElements.forEach((slidersElement) => {
     const scrollRatio = slider.scrollLeft / maxScrollLeft;
     const barMaxWidth = slider.clientWidth;
     const barWidth = blueSliderBar.offsetWidth; // Width of the blue slider bar
-    const barLeft = scrollRatio * (barMaxWidth - barWidth) *(maxScrollLeft > 0 ? 1 : 0);;
+    const barLeft =
+      scrollRatio * (barMaxWidth - barWidth) * (maxScrollLeft > 0 ? 1 : 0);
     blueSliderBar.style.transform = `translateX(${barLeft}px)`;
   };
 
@@ -60,7 +60,6 @@ const main = document.querySelector(".app-main-content-container");
 const footer = document.querySelector("footer");
 let burgerButtonClicked = false;
 
-
 burgerButton.addEventListener("click", () => {
   burgerButtonClicked = !burgerButtonClicked;
   if (burgerButtonClicked) {
@@ -70,15 +69,15 @@ burgerButton.addEventListener("click", () => {
     main.style.display = "none";
     footer.style.display = "none";
     window.addEventListener("resize", function () {
-        if (window.matchMedia("(min-width: 990px)").matches) {
-          burgerButton.classList.remove("app-header-burger-active");
-          menu.style.display = "none";
-          menuFooter.style.display = "none";
-          main.style.display = "flex";
-          footer.style.display = "flex";
-          burgerButtonClicked = false;
-        }
-      });
+      if (window.matchMedia("(min-width: 990px)").matches) {
+        burgerButton.classList.remove("app-header-burger-active");
+        menu.style.display = "none";
+        menuFooter.style.display = "none";
+        main.style.display = "flex";
+        footer.style.display = "flex";
+        burgerButtonClicked = false;
+      }
+    });
   } else {
     burgerButton.classList.remove("app-header-burger-active");
     menu.style.display = "none";
@@ -109,16 +108,45 @@ document.querySelectorAll(".app-main-menu-header").forEach((header) => {
   });
 });
 
-
-document.getElementById('stickyButton').addEventListener('click', function() {
-    document.getElementById('expandedContent').style.display = 'block';
-    document.getElementById('closeButton').style.display = 'flex';
-    document.getElementById('stickyButton').style.display = 'none';
+document.getElementById("stickyButton").addEventListener("click", function () {
+  document.getElementById("expandedContent").style.display = "block";
+  document.getElementById("closeButton").style.display = "flex";
+  document.getElementById("stickyButton").style.display = "none";
 });
 
-document.getElementById('closeButton').addEventListener('click', function() {
-    document.getElementById('expandedContent').style.display = 'none';
-    document.getElementById('stickyButton').style.display = 'flex';
-    document.getElementById('closeButton').style.display = 'none';
+document.getElementById("closeButton").addEventListener("click", function () {
+  document.getElementById("expandedContent").style.display = "none";
+  document.getElementById("stickyButton").style.display = "flex";
+  document.getElementById("closeButton").style.display = "none";
+});
 
+const navDropDowns = document.querySelectorAll(".app-header-nav-li");
+
+let clickedNav = "";
+
+
+navDropDowns.forEach((navDropDown) => {
+  navDropDown.addEventListener("click", () => {
+    const productsDropdown = document.querySelector(
+      ".app-header-dropdown-container"
+    );
+    if (clickedNav === navDropDown.children[0].children[0].innerHTML) {
+      productsDropdown.classList.add("app-header-dropdown-container-close")
+      navDropDown.children[0].children[1].style.display =
+        navDropDown.children[0].children[1].style.display === "flex"
+          ? "none"
+          : "flex";
+      clickedNav = "";
+    } else {
+      navDropDowns.forEach((navDropDown) => {
+        navDropDown.children[0].children[1].style.display = "none";
+      });
+      productsDropdown.classList.remove("app-header-dropdown-container-close");
+      navDropDown.children[0].children[1].style.display =
+        navDropDown.children[0].children[1].style.display === "flex"
+          ? "none"
+          : "flex";
+      clickedNav = navDropDown.children[0].children[0].innerHTML;
+    }
+  });
 });

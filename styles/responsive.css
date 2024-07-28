@@ -48,6 +48,9 @@
         flex: 1 0 370px;
     }
       
+    .app-header-dropdown-container {
+        display: none;
+    }
 
 }
 
@@ -189,7 +192,15 @@
     .app-header-container {
         margin-inline: 15px;
     }   
+
+    .app-header-container {
+        padding-inline: 14px;
+    }
     
+    .app-main-header {
+        margin-inline: 14px;
+    }
+
     .app-main-menu-item {
         padding-inline: 15px;
     }

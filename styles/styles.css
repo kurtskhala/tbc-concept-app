@@ -36,11 +36,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 24px 0px;
     background: #fff;
     position: fixed;
     top: 0;
-    height: 80px;
+    min-height: 80px;
     max-width: inherit;
     width: inherit;
     left: 50%;
@@ -53,14 +54,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1110px;
-    margin-inline: 47px;
+    width: 100%;
+    max-width: 1204px;
+    padding-inline: 47px;
 }
 
 .app-header-logo {
     color: #f9fafa;
     width: 165px;
     height: 32px;
+    cursor: pointer;
 }
 
 .app-header-logo_header {
@@ -83,6 +86,24 @@ header {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
+    cursor: pointer;
+}
+
+.app-header-nav-li-dropdown {
+    position: absolute;
+    top: 100%;
+    transition-delay: .6s;
+    width: 200px;
+    display: flex;
+    row-gap: 16px;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
 }
 
 .app-header-rightSide {
@@ -96,6 +117,11 @@ header {
     font-size: 24px;
     font-weight: 100px;
     color: #555f62;
+    cursor: pointer;
+}
+
+.app-header-rightSide-search:hover {
+    color: #3295ce;
 }
 
 .app-header-rightSide-package {
@@ -110,6 +136,7 @@ header {
     text-decoration: none;
     transition: color .25s ease-in-out;
     display: flex;
+    cursor: pointer;
 }
 
 .app-header-rightSide-package:hover {
@@ -121,6 +148,7 @@ header {
 }
 
 .app-header-rightSide-language {
+    position: relative;
     height: 36px;
     grid-column-gap: 4px;
     cursor: pointer;
@@ -134,7 +162,29 @@ header {
     line-height: 1.7;
     transition: background-color .25s ease-in-out;
     display: flex;
+    flex-direction: column;
     color: #555f62;
+}
+
+.app-header-rightSide-language:hover {
+    background-color: #555f622b;
+}
+
+.app-header-rightSide-language-drop {
+    position: absolute;
+    bottom: -110%;
+    width: 62px;
+    background-color: #fff;
+    border: 1px solid #e1e4e5;
+    border-radius: 4px;
+    flex-direction: column;
+    padding: 8px;
+    box-shadow: 0 4px 6px 2px rgba(12, 43, 67, .05);
+    display: none;
+}
+
+.app-header-rightSide-language:hover .app-header-rightSide-language-drop{
+    display: flex;
 }
 
 .app-header-burger{
@@ -183,6 +233,77 @@ header {
 
 .app-header-burger-active span:nth-child(3){
     display: none;
+}
+
+.app-header-dropdown-container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #d1d5d6;
+    padding-inline: 47px;
+}
+
+.app-header-dropdown-container-close {
+    display: none;
+}
+
+.app-header-dropdown-right {
+    grid-column-gap: 6px;
+    color: #182cc0;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header-dropdown-digital_banking {
+    display: flex;
+    column-gap: 5px;
+}
+
+.app-header-dropdown-digital_banking-arrow {
+    filter: invert(13%) sepia(58%) saturate(6210%) hue-rotate(237deg) brightness(94%) contrast(104%);
+}
+
+.app-header-dropdown {
+    display: none;
+    width: 100%;
+    border-radius: 4px;
+    z-index: 1000;
+    width: min(100%, 1110px);
+    display: flex;
+    margin: 32px 0;
+}
+
+.app-header-dropdown-img {
+    width: 190px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.app-header-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header-dropdown li {
+    margin-bottom: 10px;
+}
+
+.app-header-dropdown li:last-child {
+    margin-bottom: 0;
 }
 
 .app-main-menu-container {
@@ -267,7 +388,7 @@ header {
     color: #141719;
     font-weight: 500;
     margin-inline: 47px;
-
+    font-size: 12px;
 }
 
 /* main content hero  */
@@ -414,10 +535,19 @@ header {
     display: flex;
     align-items: center;
     column-gap: 5px;
+    cursor: pointer;
+}
+
+.app-main-content-become_concept-content-card-button:hover {
+    color: #555f62;
+
 }
 
 .app-main-content-become_concept-content-card-button span{
     text-decoration: underline;
+}
+.app-main-content-become_concept-content-card-button span:hover{
+    text-decoration: none;
 }
 
 .app-main-content-become_concept-content-card {
@@ -432,7 +562,10 @@ header {
     height: 256px;
     background-color: rgba(0, 6, 20, 0.3);
     background-blend-mode: multiply;
+    cursor: pointer;
+    object-fit: cover;
 }
+
 
 .app-main-content-become_concept-content-card-content {
     width: 100%;
@@ -547,9 +680,13 @@ header {
   .card-image img {
     width: 100%;
     height: 100%;
-    
     display: block;
+    transition: 0.3s ease-in;
   }
+
+  .card-image-img:hover {
+    transform: scale(1.15) translateY(-6.52%);
+}
   
   .logo {
     position: absolute;
@@ -791,6 +928,8 @@ footer {
 .app-footer-content-card-link {
     font-weight: 400;
     line-height: 1.7;
+    font-size: 16px;
+    color: #555f62;
 }
 
 .app-footer-content-card-link:hover {
@@ -803,6 +942,23 @@ footer {
 
 .app-footer-content-card-contacts .app-footer-content-card-nav {
     margin: 32px 0;
+}
+
+.app-footer-content-card-contacts-link {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: #555f62;
+}
+
+.app-footer-content-card-contacts-link i{
+    width: 16px;
+}
+
+
+
+.app-footer-content-card-contacts-link span:hover{
+    text-decoration: underline;
 }
 
 .app-footer-content-card-social .app-footer-content-card-ul{
@@ -878,6 +1034,10 @@ footer {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
+}
+
+.app-footer-bottom-right a:hover {
+    color: #007aff;
 }
 
 .app-footer-menu-container {

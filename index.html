@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="shortcut icon" href="./assets/smallLogo.svg" />
     <script
       src="https://kit.fontawesome.com/0e1a1f2a1c.js"
       crossorigin="anonymous"
     ></script>
+    <title>თიბისი კონცეპტი | TBC Concept</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/laptop.css" />
-    <link rel="stylesheet" href="./styles/tablet.css" />
-    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <title>Document</title>
   </head>
   <body>
@@ -28,9 +28,37 @@
           </a>
           <nav class="app-header-nav">
             <ul class="app-header-nav-ul">
-              <li class="app-header-nav-li">პროდუქტები</li>
-              <li class="app-header-nav-li">შეთავაზებები</li>
-              <li class="app-header-nav-li">კონცეპტის სივრცე</li>
+              <li class="app-header-nav-li">
+                <div>
+                  <span>პროდუქტები</span>
+                  <ul class="app-header-nav-li-dropdown">
+                    <li>პროდუქტის მიმოხილვა</li>
+                    <li>ნაკრები</li>
+                    <li>პირადი ბანკირი</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="app-header-nav-li">
+                <div>
+                  <span>შეთავაზებები</span>
+                  <ul class="app-header-nav-li-dropdown">
+                    <li>მიმოხილვა</li>
+                    <li>შეთავაზებები</li>
+                    <li>ღონისძიებები</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="app-header-nav-li">
+                <div>
+                  <span>კონცეპტის სივრცე</span>
+                  <ul class="app-header-nav-li-dropdown">
+                    <li>მიმოხილვა</li>
+                    <li>კაფე</li>
+                    <li>ბიბლიოთეკა</li>
+                    <li>კონცეპტ ფილიალები</li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </nav>
           <div class="app-header-rightSide">
@@ -53,10 +81,38 @@
             <div
               class="app-header-rightSide-language app-header-rightSide-language_header"
             >
-              <i
-                class="fa-solid fa-globe app-header-rightSide-language-icon"
-              ></i>
-              <span class="app-header-rightSide-language-text">ქარ</span>
+              <div>
+                <i
+                  class="fa-solid fa-globe app-header-rightSide-language-icon"
+                ></i>
+                <span class="app-header-rightSide-language-text">ქარ</span>
+              </div>
+              <div
+                class="app-header-rightSide-language app-header-rightSide-language-drop"
+              >
+                <span class="app-header-rightSide-language-text">Eng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="app-header-dropdown-container app-header-dropdown-container-close"
+        >
+          <div class="app-header-dropdown" id="productsDropdown">
+            <div class="app-header-dropdown-right">
+              <img
+                class="app-header-dropdown-img"
+                src="./assets/cards.png"
+                alt="Product Image"
+              />
+              <div class="app-header-dropdown-digital_banking">
+                <img
+                  class="app-header-dropdown-digital_banking-arrow"
+                  src="./assets/arrow.svg"
+                  alt="arrow"
+                />
+                <span> ციფრული ბანკი </span>
+              </div>
             </div>
           </div>
         </div>
@@ -253,6 +309,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/offer1.jpg"
                       draggable="false"
                       alt="Card Image"
@@ -269,6 +326,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/offer2.png"
                       draggable="false"
                       alt="Card Image"
@@ -288,6 +346,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/offer3.png"
                       draggable="false"
                       alt="Card Image"
@@ -309,6 +368,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/offer4.png"
                       draggable="false"
                       alt="Card Image"
@@ -332,6 +392,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/offer5.png"
                       draggable="false"
                       alt="Card Image"
@@ -412,6 +473,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/digital.png"
                       draggable="false"
                       alt="Card Image"
@@ -436,6 +498,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/premium.png"
                       draggable="false"
                       alt="Card Image"
@@ -457,6 +520,7 @@
                 <div class="app-main-content-offers-swiper-slider-card">
                   <div class="card-image">
                     <img
+                      class="card-image-img"
                       src="./assets/360.png"
                       draggable="false"
                       alt="Card Image"
@@ -586,11 +650,20 @@
             <a class="app-header-logo app-header-logo-small">
               <img src="./assets/smallLogo.svg" alt="logo" />
             </a>
-            <div class="app-header-rightSide-language">
-              <i
-                class="fa-solid fa-globe app-header-rightSide-language-icon"
-              ></i>
-              <span class="app-header-rightSide-language-text">ქარ</span>
+            <div
+              class="app-header-rightSide-language app-header-rightSide-language_header"
+            >
+              <div>
+                <i
+                  class="fa-solid fa-globe app-header-rightSide-language-icon"
+                ></i>
+                <span class="app-header-rightSide-language-text">ქარ</span>
+              </div>
+              <div
+                class="app-header-rightSide-language app-header-rightSide-language-drop"
+              >
+                <span class="app-header-rightSide-language-text">Eng</span>
+              </div>
             </div>
           </div>
           <div class="app-footer-content">
@@ -703,21 +776,25 @@
                     <li>
                       <a
                         href="tel:+995322272700"
-                        class="app-footer-listItem-link"
-                        ><i class="fa-solid fa-phone"></i> +995 32 2 27 27 00</a
+                        class="app-footer-listItem-link app-footer-content-card-contacts-link"
+                        ><i class="fa-solid fa-phone"></i>
+                        <span>+995 32 2 27 27 00</span></a
                       >
                     </li>
                     <li>
                       <a
                         href="mailto:info@tbcconcept.ge"
-                        class="app-footer-listItem-link"
+                        class="app-footer-listItem-link app-footer-content-card-contacts-link"
                         ><i class="fa-solid fa-envelope"></i>
-                        info@tbcconcept.ge</a
+                        <span>info@tbcconcept.ge</span></a
                       >
                     </li>
                     <li>
-                      <a class="app-footer-content-card-link" href=""
-                        ><i class="fa-solid fa-location-dot"></i> ფილიალები</a
+                      <a
+                        class="app-footer-content-card-link app-footer-content-card-contacts-link"
+                        href=""
+                        ><i class="fa-solid fa-location-dot"></i>
+                        <span>ფილიალები</span></a
                       >
                     </li>
                   </ul>
@@ -780,25 +857,29 @@
                 <nav class="app-footer-content-card-nav">
                   <ul class="app-footer-content-card-ul">
                     <li>
-                      <a
-                        href="tel:+995322272700"
-                        class="app-footer-listItem-link"
-                        ><i class="fa-solid fa-phone"></i> +995 32 2 27 27 00</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="mailto:info@tbcconcept.ge"
-                        class="app-footer-listItem-link"
-                        ><i class="fa-solid fa-envelope"></i>
-                        info@tbcconcept.ge</a
-                      >
-                    </li>
-                    <li>
-                      <a class="app-footer-content-card-link" href=""
-                        ><i class="fa-solid fa-location-dot"></i> ფილიალები</a
-                      >
-                    </li>
+                        <a
+                          href="tel:+995322272700"
+                          class="app-footer-listItem-link app-footer-content-card-contacts-link"
+                          ><i class="fa-solid fa-phone"></i>
+                          <span>+995 32 2 27 27 00</span></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:info@tbcconcept.ge"
+                          class="app-footer-listItem-link app-footer-content-card-contacts-link"
+                          ><i class="fa-solid fa-envelope"></i>
+                          <span>info@tbcconcept.ge</span></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="app-footer-content-card-link app-footer-content-card-contacts-link"
+                          href=""
+                          ><i class="fa-solid fa-location-dot"></i>
+                          <span>ფილიალები</span></a
+                        >
+                      </li>
                   </ul>
                 </nav>
               </div>
@@ -855,17 +936,17 @@
           <i class="fas fa-ellipsis-v"></i>
         </div>
         <div class="expanded-content" id="expandedContent">
-            <ul>
-                <li>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-phone"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-phone"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+            </li>
+          </ul>
         </div>
         <div class="close-btn" id="closeButton">
           <i class="fa-solid fa-xmark button-xmark"></i>
