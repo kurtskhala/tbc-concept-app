@@ -13,15 +13,13 @@ tbc-concept-webpage/
 │   ├── reset.css       # CSS reset file
 │   └── responsive.css  # CSS file for responsiveness
 └── scripts/            # Folder containing JavaScript files
-Technologies Used
+
+Technologies Used:
+
 JavaScript
 HTML
 CSS
 Installation Instructions
 To view the webpage, simply open the index.html file in your web browser.
 
-Contributing Guidelines
-There are no specific guidelines for contributing to this project.
 
-License
-[Include the license here if applicable]
